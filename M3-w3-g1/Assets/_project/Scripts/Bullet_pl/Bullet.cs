@@ -33,6 +33,6 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.MovePosition(_rb.position + direction * (speed * Time.deltaTime));
+        _rb.MovePosition(_rb.position + direction * (speed * Time.fixedDeltaTime));
     }
 }
